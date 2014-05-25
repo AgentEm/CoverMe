@@ -13,7 +13,7 @@ coverMe.init = function() {
 		//run the various functions with inputWithCover 
 		//as the parameter you pass said functions if needed
 		coverMe.changeDisplay();
-		coverMe.getVideos(inputWithCover);
+		coverMe.getVideo(inputWithCover);
 
 	});
 };
@@ -21,8 +21,25 @@ coverMe.init = function() {
 
 //put all your other functions here
 
-coverMe.getVideos = function(result){
+coverMe.getVideo = function(query){
 	//ajax or whatever here
+	$.ajax({
+		type: "GET",
+		dataType: "json",
+		url: "https://gdata.youtube.com/feeds/api/videos",
+		data: {
+			alt: "json",
+			key: coverMe.key,
+			q: query,
+			"start-index":1,
+			"max-results": 1,
+			v:2,
+			orderby:"viewCount"
+		},
+		success: function(result){
+			debugger;
+		}
+	});
 };
 
 coverMe.changeDisplay = function(){
@@ -47,7 +64,7 @@ $(function(){
 //pull results from youtube for that string
 //find the most viewed video from those results
 //display the resulting single video in the <section> div,
-//hide what was there before, **DONEish**
+//hide what was there before, **DONE**
 //and make the background color of the site fade to black. **DONE**
 //include a button at the bottom of the resulting video
 //that allows user to restart the process
