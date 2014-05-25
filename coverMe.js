@@ -8,13 +8,10 @@ coverMe.init = function() {
 	$("#submit").on("click", function(e){
 		e.preventDefault();
 		var searchInput = $("#search").val();
-		var inputWithCover = searchInput + " cover";
-		console.log(inputWithCover);
-		//run the various functions with inputWithCover 
-		//as the parameter you pass said functions if needed
+		var inputWithCover = searchInput + ' "cover"';
 		coverMe.changeDisplay();
 		coverMe.getVideo(inputWithCover);
-
+		coverMe.displayVideo();
 	});
 };
 
@@ -37,7 +34,9 @@ coverMe.getVideo = function(query){
 			orderby:"viewCount"
 		},
 		success: function(result){
-			debugger;
+			var theVideoURL = result.feed.entry[0].content.src;
+			console.log(theVideoURL);
+			coverMe.displayVideo(theVideoURL);
 		}
 	});
 };
@@ -51,6 +50,11 @@ coverMe.changeDisplay = function(){
 	});
 };
 
+coverMe.displayVideo = function(data){
+	$(".videoBox").html(
+		'<object width="60%" height="400"><param name="movie" value="' + data + '"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="' + data + '" type="application/x-shockwave-flash" width="60%" height="400" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
+	);
+};
 
 //initialize app with jQuery
 
@@ -61,9 +65,9 @@ $(function(){
 //PSEUDO CODE:
 //user types in song title. User presses submit. **DONE**
 //Take the string user subitted, concat " cover" on to it **DONE**
-//pull results from youtube for that string
-//find the most viewed video from those results
-//display the resulting single video in the <section> div,
+//pull results from youtube for that string **DONE**
+//find the most viewed video from those results**DONE**
+//display the resulting single video in the videoBox div,
 //hide what was there before, **DONE**
 //and make the background color of the site fade to black. **DONE**
 //include a button at the bottom of the resulting video
