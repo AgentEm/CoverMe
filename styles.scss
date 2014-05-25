@@ -10,7 +10,6 @@ $green:#8A9B0F;
 @import "borderbox-and-clearfix";
 
 body {
-	background-color:#FFF;
 	color:#FFF;
 	font-family:$font-stack;
 	background-color:$yellow;
@@ -20,15 +19,18 @@ header {
 	padding: 5% 0 4% 0;
 	h1 {
 		display:inline-block;
-		font-size:7em;
+		font-size:7.5em;
 		font-family: Bangers;
 		vertical-align: top;
 	}
 }
 
-section {
+.main {
 	text-align:center;
 	padding:8% 0 15% 0;
+	.videoBox {
+		display:none;
+	}
 	p {
 		margin:0;
 		font-size:2.3em;
@@ -49,15 +51,15 @@ section {
 				background-color: #EEE;
 			}
 		}
-		input[type="submit"]{
-			padding:0.6% 0.6% 1.8% 0.6%;
-			background-color:#FFF;
-			transition:background-color 0.5s, color 0.5s;
-			&:hover{
-				background-color: $yellow;
-				color:$purple; 
-			}
-		}
+	}
+}
+
+.button {
+	background-color:#FFF;
+	transition:background-color 0.5s, color 0.5s;
+	&:hover{
+		background-color: $yellow;
+		color:$purple; 
 	}
 }
 
