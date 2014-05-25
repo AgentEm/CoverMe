@@ -8,7 +8,7 @@ coverMe.init = function() {
 	$("#submit").on("click", function(e){
 		e.preventDefault();
 		var searchInput = $("#search").val();
-		var inputWithCover = searchInput + ' "cover"';
+		var inputWithCover = searchInput + ' cover';
 		coverMe.changeDisplay();
 		coverMe.getVideo(inputWithCover);
 		coverMe.displayVideo();
@@ -22,20 +22,18 @@ coverMe.getVideo = function(query){
 	//ajax or whatever here
 	$.ajax({
 		type: "GET",
-		dataType: "json",
-		url: "https://gdata.youtube.com/feeds/api/videos",
+		url: "https://www.googleapis.com/youtube/v3/search",
 		data: {
-			alt: "json",
-			key: coverMe.key,
+			v:3,
 			q: query,
-			"start-index":1,
-			"max-results": 1,
-			v:2,
-			orderby:"viewCount"
+			part: "snippet",
+			type: "video",
+			videoEmbeddable: "true",
+			maxResults: 1,
+			key: coverMe.key
 		},
 		success: function(result){
-			var theVideoURL = result.feed.entry[0].content.src;
-			console.log(theVideoURL);
+			var theVideoURL = result.items[0].id.videoId;
 			coverMe.displayVideo(theVideoURL);
 		}
 	});
@@ -43,6 +41,7 @@ coverMe.getVideo = function(query){
 
 coverMe.changeDisplay = function(){
 	$("body").css("background-color", "#222");
+	$(".main").css("padding", "5% 0");
 	$(".main p, .main form").css("display", "none");
 	$(".main .videoBox").css({
 		"display": "block",
@@ -52,7 +51,7 @@ coverMe.changeDisplay = function(){
 
 coverMe.displayVideo = function(data){
 	$(".videoBox").html(
-		'<object width="60%" height="400"><param name="movie" value="' + data + '"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="' + data + '" type="application/x-shockwave-flash" width="60%" height="400" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
+		'<object width="70%" height="570"><param name="movie" value="https://www.youtube.com/v/'+data+'?version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/'+data+'?version=3" type="application/x-shockwave-flash" width="70%" height="570" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
 	);
 };
 
