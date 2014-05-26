@@ -45,13 +45,13 @@ coverMe.changeDisplay = function(){
 	$(".main p, .main form").css("display", "none");
 	$(".main .videoBox").css({
 		"display": "block",
-		"margin": "0 auto"
+		"margin": "0 10%"
 	});
 };
 
 coverMe.displayVideo = function(data){
 	$(".videoBox").html(
-		'<object width="70%" height="570"><param name="movie" value="https://www.youtube.com/v/'+data+'?version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/'+data+'?version=3" type="application/x-shockwave-flash" width="70%" height="570" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
+		'<object width="100%" height="570"><param name="movie" value="https://www.youtube.com/v/'+data+'?version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/'+data+'?version=3" type="application/x-shockwave-flash" width="100%" height="570" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
 	);
 };
 
