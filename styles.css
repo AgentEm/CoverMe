@@ -281,53 +281,57 @@ header h1 a {
   font-size: 2.3em;
   padding-bottom: 3%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000343}}
+.main .videoBtn {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000347}}
 .main form input {
   height: 2em;
   color: #bd1550;
   border: 5px solid #bd1550;
   background-color: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000353}}
 .main form input[type="search"] {
   width: 30%;
   padding: 0 0.5em 0 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000356}}
 .main form input[type="search"]:focus {
   outline: none;
   background-color: #EEE;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000364}}
 .button {
   background-color: #FFF;
   transition: background-color 0.5s, color 0.5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000367}}
 .button:hover {
   background-color: #f8ca00;
   color: #490a3d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000373}}
 footer {
   font-size: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000375}}
 footer p {
   text-align: center;
   padding: 3em 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000380}}
 footer a {
   text-decoration: none;
   color: #8a9b0f;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000387}}
 svg {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -336,33 +340,33 @@ svg {
   margin-left: 3%;
   fill: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000394}}
 svg #one {
   -webkit-transition: fill 0.5s;
   transition: fill 0.5s;
   fill: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\0000398}}
 svg #one:hover {
   fill: #8a9b0f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003103}}
 svg #two {
   -webkit-transition: fill 0.5s;
   transition: fill 0.5s;
   fill: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003107}}
 svg #two:hover {
   fill: #bd1550;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003112}}
 svg #three {
   -webkit-transition: fill 0.5s;
   transition: fill 0.5s;
   fill: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003116}}
 svg #three:hover {
   fill: #490a3d;
 }

@@ -46,6 +46,17 @@ coverMe.changeDisplay = function(){
 	$(".main .videoBox").css({
 		"display": "block",
 		"margin": "0 10%"
+	})
+	$(".videoBtn").css({
+		"display":"inline-block",
+		"margin-top": "3%",
+		"border":"5px solid #BD1550"
+	})
+	$(".videoBtn a").css({
+		"color":"#490A3D",
+		"text-decoration":"none",
+		"display":"inline-block",
+		"padding":"1em"
 	});
 };
 
