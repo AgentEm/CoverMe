@@ -70,6 +70,28 @@ coverMe.displayVideo = function(data){
 
 $(function(){
 	coverMe.init();
+	new Share("#share", {		
+		networks: {
+			twitter: {
+				description: "Just found a great cover song using CoverMe!",
+				url: "http://agentem.github.io/CoverMe"
+			},
+			facebook: {
+				url:"http://agentem.github.io/CoverMe",
+				image:"images/umbrella.svg"
+			},
+			email: {
+				title:"Check out this app to find great cover songs!",
+				description:"Here's the link: http://agentem.github.io/CoverMe"
+			},
+			google_plus: {
+				enabled:false
+			},
+			pinterest: {
+				enabled:false
+			}
+		}
+	});
 });
 
 //PSEUDO CODE:

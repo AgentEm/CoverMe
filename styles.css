@@ -370,3 +370,8 @@ svg #three {
 svg #three:hover {
   fill: #490a3d;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/emilyporta\/Desktop\/HackerYou\/project\%20websites\/Week\%206\/styles\.scss}line{font-family:\00003121}}
+#share {
+  margin: 0 auto;
+}
