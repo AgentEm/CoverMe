@@ -138,7 +138,6 @@ svg {
 //Portrait tablet and small desktops
 @media (max-width:940px) {
 	.main {
-		border:1px solid green; // for testing media queries
 		p {
 			font-size: 2em;
 		}
@@ -150,18 +149,10 @@ svg {
 	}
 }
 
-//Landscape phone to portrait tablet
-@media (max-width:767px) {
-	.main {
-		border:1px solid red;
-	}
-}
-
-//Landscape phones and down - try doing everything 100% width
+//Landscape phones and down
 
 @media (max-width:480px) {
 	.main {
-		border: 1px solid purple;
 		margin-bottom: 20%;
 		form {
 			input[type="search"] {
