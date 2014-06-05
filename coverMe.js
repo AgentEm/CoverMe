@@ -50,19 +50,21 @@ coverMe.changeDisplay = function(){
 	$(".videoBtn").css({
 		"display":"inline-block",
 		"margin-top": "3%",
-		"border":"5px solid #BD1550"
+		"margin-bottom": "10%",
+		"border":"none",
+		"color":"#FFF"
 	})
 	$(".videoBtn a").css({
-		"color":"#490A3D",
+		"color":"#BD1550",
 		"text-decoration":"none",
 		"display":"inline-block",
-		"padding":"1em"
+		"padding":"0.8em 1em"
 	});
 };
 
 coverMe.displayVideo = function(data){
 	$(".videoBox").html(
-		'<object width="100%" height="570"><param name="movie" value="https://www.youtube.com/v/'+data+'?version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/'+data+'?version=3" type="application/x-shockwave-flash" width="100%" height="570" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
+		'<object width="100%" height="500px"><param name="movie" value="https://www.youtube.com/v/'+data+'?version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/'+data+'?version=3" type="application/x-shockwave-flash" width="100%" height="500px" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
 	);
 };
 

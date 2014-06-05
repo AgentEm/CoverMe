@@ -42,20 +42,23 @@ header {
 	}
 	.videoBtn {
 		display:none;
+		border:none;
 	}
 	form {
 		input {
-			height:2em;
+			padding: 0.8em 1em;
 			color:$pink;
-			border: 5px solid $pink;
+			border:none;
 			background-color:#FFF;
 		}
 		input[type="search"]{
+			color:#FFF;
 			width: 30%;
-			padding: 0 0.5em 0 0.5em;
+			transition: background-color 0.5s;
+			margin-right: 1%;
 			&:focus {
 				outline:none;
-				background-color: #EEE;
+				background-color: #bd1550;
 			}
 		}
 	}
@@ -63,10 +66,10 @@ header {
 
 .button {
 	background-color:#FFF;
-	transition:background-color 0.5s, color 0.5s;
+	transition: all 0.5s;
 	&:hover{
-		background-color: $yellow;
-		color:$purple; 
+		background-color: $purple;
+		color:#FFF; 
 	}
 }
 
@@ -82,26 +85,33 @@ footer {
 		color:$green;
 		font-weight: bold;
 	}
+	#share {
+		margin:0 auto;
+	}
 }
 
 svg {
-	-webkit-transform: rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
 	-moz-transform:rotate(-45deg);
-	-o-transform: rotate(-45deg);
+	-o-transform:rotate(-45deg);
 	transform:rotate(-45deg);
 	margin-left: 3%;
 	fill:#FFF;
 	#one {
 		-webkit-transition: fill 0.5s;
+		-moz-transition: fill 0.5s;
+		-o-transition: fill 0.5s;
 		transition: fill 0.5s;
 		fill:#FFF;
 		&:hover {
-			fill:$green;
+			fill:$green; 
 		}
 	}
 
 	#two {
 		-webkit-transition: fill 0.5s;
+		-moz-transition: fill 0.5s;
+		-o-transition: fill 0.5s;
 		transition: fill 0.5s;
 		fill:#FFF;
 		&:hover {
@@ -111,6 +121,8 @@ svg {
 
 	#three {
 		-webkit-transition: fill 0.5s;
+		-moz-transition: fill 0.5s;
+		-o-transition: fill 0.5s;
 		transition: fill 0.5s;
 		fill:#FFF;
 		&:hover {
@@ -118,6 +130,59 @@ svg {
 		}
 	}
 }
-#share {
-	margin: 0 auto;
+
+//****************
+//MEDIA QUERIES 
+//****************
+
+//Portrait tablet and small desktops
+@media (max-width:940px) {
+	.main {
+		border:1px solid green; // for testing media queries
+		p {
+			font-size: 2em;
+		}
+		form {
+			input[type="search"] {
+				width: 40%;
+			}
+		}	
+	}
+}
+
+//Landscape phone to portrait tablet
+@media (max-width:767px) {
+	.main {
+		border:1px solid red;
+	}
+}
+
+//Landscape phones and down - try doing everything 100% width
+
+@media (max-width:480px) {
+	.main {
+		border: 1px solid purple;
+		margin-bottom: 20%;
+		form {
+			input[type="search"] {
+				width: 85%;
+				margin:0 auto 5%;
+			}
+			input[type="submit"] {
+				width: 40%;
+			}
+		}
+	}
+	svg {
+		margin:0 auto;
+		display: block;
+	}
+	header {
+		h1 {
+			font-size: 5em;
+			text-align: center;
+			display:block;
+		}
+	}
+
 }
