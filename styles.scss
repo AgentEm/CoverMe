@@ -15,6 +15,33 @@ body {
 	background-color:$yellow;
 }
 
+.showVideo {
+	background-color: #222;
+	.main {
+		padding:5% 0;
+		p, form {
+			display:none;
+		}
+		.videoBox {
+			display:block;
+			margin:0 10%;
+		}
+	}
+	.videoBtn {
+		display:inline-block;
+		margin-top:3%;
+		margin-bottom:10%;
+		border:none;
+		color: #FFF;
+		a {
+			color:#BD1550;
+			text-decoration: none;
+			display: inline-block;
+			padding: 0.8em 1em;
+		}
+	}
+}
+
 header {
 	padding: 5% 0 4% 0;
 	h1 {
@@ -103,7 +130,7 @@ footer {
 		font-weight: bold;
 	}
 	#share {
-		margin:0 auto;
+		margin:10% auto 0;
 	}
 }
 
@@ -147,6 +174,7 @@ svg {
 		}
 	}
 }
+
 
 //****************
 //MEDIA QUERIES 
