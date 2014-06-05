@@ -91,18 +91,22 @@ header {
 		}
 		::-webkit-input-placeholder {
 		   color: #BFBFBF;
+		   text-align: center;
 		}
 
 		:-moz-placeholder { /* Firefox 18- */
 		   color: #BFBFBF;  
+		   text-align: center;
 		}
 
 		::-moz-placeholder {  /* Firefox 19+ */
 		   color: #BFBFBF;  
+		   text-align: center;
 		}
 
 		:-ms-input-placeholder {  
 		   color: #BFBFBF;  
+		   text-align: center;
 		}
 	}
 }

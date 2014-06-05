@@ -42,27 +42,6 @@ coverMe.getVideo = function(query){
 
 coverMe.changeDisplay = function(){
 	$("body").addClass("showVideo");
-
-	// $("body").css("background-color", "#222");
-	// $(".main").css("padding", "5% 0");
-	// $(".main p, .main form").css("display", "none");
-	// $(".main .videoBox").css({
-	// 	"display": "block",
-	// 	"margin": "0 10%"
-	// })
-	// $(".videoBtn").css({
-	// 	"display":"inline-block",
-	// 	"margin-top": "3%",
-	// 	"margin-bottom": "10%",
-	// 	"border":"none",
-	// 	"color":"#FFF"
-	// })
-	// $(".videoBtn a").css({
-	// 	"color":"#BD1550",
-	// 	"text-decoration":"none",
-	// 	"display":"inline-block",
-	// 	"padding":"0.8em 1em"
-	// });
 };
 
 coverMe.displayVideo = function(data){
