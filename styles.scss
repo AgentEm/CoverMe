@@ -50,6 +50,7 @@ header {
 			color:$pink;
 			border:none;
 			background-color:#FFF;
+			border-radius:0;
 		}
 		input[type="search"]{
 			color:#FFF;
@@ -61,12 +62,28 @@ header {
 				background-color: #bd1550;
 			}
 		}
+		::-webkit-input-placeholder {
+		   color: #BFBFBF;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #BFBFBF;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: #BFBFBF;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: #BFBFBF;  
+		}
 	}
 }
 
 .button {
 	background-color:#FFF;
 	transition: all 0.5s;
+	border-radius:0;
 	&:hover{
 		background-color: $purple;
 		color:#FFF; 
